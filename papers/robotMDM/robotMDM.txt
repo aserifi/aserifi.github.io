@@ -1,0 +1,18 @@
+﻿@inproceedings{serifi2024robotmdm,
+author = {Serifi, Agon and Grandia, Ruben and Knoop, Espen and Gross, Markus and B\"{a}cher, Moritz},
+title = {Robot Motion Diffusion Model: Motion Generation for Robotic Characters},
+year = {2024},
+isbn = {9798400711312},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3680528.3687626},
+doi = {10.1145/3680528.3687626},
+abstract = {Recent advancements in generative motion models have achieved remarkable results, enabling the synthesis of lifelike human motions from textual descriptions. These kinematic approaches, while visually appealing, often produce motions that fail to adhere to physical constraints, resulting in artifacts that impede real-world deployment. To address this issue, we introduce a novel method that integrates kinematic generative models with physics-based character control. Our approach begins by training a reward surrogate to predict the performance of the downstream non-differentiable control task, offering an efficient and differentiable loss function. This reward model is then employed to fine-tune a baseline generative model, ensuring that the generated motions are not only diverse but also physically plausible for real-world scenarios. The outcome of our processing is the Robot Motion Diffusion Model (RobotMDM), a text-conditioned kinematic diffusion model that interfaces with a reinforcement learning-based tracking controller. We demonstrate the effectiveness of this method on a challenging humanoid robot, confirming its practical utility and robustness in dynamic environments.},
+booktitle = {SIGGRAPH Asia 2024 Conference Papers},
+articleno = {50},
+numpages = {9},
+keywords = {physics-based characters, robotics, motion synthesis, motion control, reinforcement learning, animation},
+location = {
+},
+series = {SA '24}
+}

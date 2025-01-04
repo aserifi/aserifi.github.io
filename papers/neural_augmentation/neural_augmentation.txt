@@ -1,0 +1,10 @@
+﻿@ARTICLE{serifi2023transformer,
+  author={Serifi, Agon and Knoop, Espen and Schumacher, Christian and Kumar, Naveen and Gross, Markus and Bächer, Moritz},
+  journal={IEEE Robotics and Automation Letters},
+  title={Transformer-Based Neural Augmentation of Robot Simulation Representations},
+  year={2023},
+  volume={8},
+  number={6},
+  pages={3748-3755},
+  keywords={Robots;Actuators;Transformers;Training;Analytical models;Predictive models;Computer architecture;Deep learning methods;simulation and animation;neural augmentation;robotics;dynamics},
+  doi={10.1109/LRA.2023.3271812}}

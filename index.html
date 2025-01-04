@@ -1,0 +1,287 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9V14F860FQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-9V14F860FQ');
+    </script>
+
+    <title>Agon Serifi</title>
+
+    <meta name="author" content="Agon Serifi">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="icon" type="image/png" href="img/robot.png">
+
+</head>
+
+<body>
+<table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+    <tr style="padding:0px">
+        <td style="padding:0px">
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                <tr style="padding:0px">
+                    <td style="padding:2.5%;width:65%;vertical-align:middle">
+                        <p style="text-align:center">
+                            <name>Agon Serifi</name>
+                        </p>
+                        <p>
+                            I am pursuing my PhD in Computer Science at the <a href="https://cgl.ethz.ch/"
+                                                                               style="color: #1772d0;"
+                                                                               onmouseover="this.style.color='green';"
+                                                                               onmouseout="this.style.color='#1772d0';">Computer
+                            Graphics Laboratory (CGL)</a> at ETH Zurich and <a href="https://la.disneyresearch.com/"
+                                                                               style="color: #1772d0;"
+                                                                               onmouseover="this.style.color='red';"
+                                                                               onmouseout="this.style.color='#1772d0';">Disney
+                            Research</a>, under the supervision of <a
+                                href="https://cgl.ethz.ch/people/grossm/bio/shortbio.php" style="color: #1772d0;"
+                                onmouseover="this.style.color='darkblue';" onmouseout="this.style.color='#1772d0';">Markus
+                            Gross</a> and <a href="https://www.baecher.info" style="color: #1772d0;"
+                                             onmouseover="this.style.color='darkblue';"
+                                             onmouseout="this.style.color='#1772d0';">Moritz Bächer</a>.
+                            I hold a Bachelor's degree (2019) and a Master’s degree (2021) in Computer Science from <a
+                                href="https://ethz.ch/en.html">ETH Zurich</a>.
+                        </p>
+                        <p>
+                            My research advances physics-based control for robotic characters, with a focus on creating
+                            lifelike, versatile, and dynamic motions. At its core, my work seeks to make robots move and
+                            act in ways that are natural. To achieve this, I develop methods and frameworks that
+                            leverage deep reinforcement learning, enabling robots to be more engaging, versatile and
+                            adapt autonomously to diverse environments. By bridging the gap between simulated and
+                            real-world capabilities, my research pushes the boundaries of what robotic systems can
+                            achieve. Ultimately, I seek to evolve embodied intelligence by deeply understanding and
+                            integrating insights from human motion and behavior.
+                        </p>
+                        <p style="text-align:center">
+                            <a href="mailto:agon.serifi@disneyresearch.com">Email</a> &nbsp/&nbsp
+                            <a href="data/bio.txt">Bio</a> &nbsp/&nbsp
+                            <a href="https://scholar.google.com/citations?user=-N1s8ZIAAAAJ&hl=en">Google Scholar</a>
+                            &nbsp/&nbsp
+                            <a href="https://linkedin.com/in/agonserifi">LinkedIn</a>
+                            <!--a href="https://github.com/aserifi">GitHub</a-->
+                        </p>
+                    </td>
+                    <td style="padding:2.5%;width:40%;max-width:35%">
+                        <img src="img/Agon_Serifi.png" width="225px"
+                             style="background-color: #f0f0f0; border-radius: 6px;">
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <hr>
+
+            <!-- News -->
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                <tbody>
+                <tr>
+                    <td>
+                        <h1 style="font-weight: bold;">News</h1>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- News Entries Table -->
+            <div class="table-responsive">
+                <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"
+                       id="news-table">
+                    <!-- News entries will be dynamically loaded here -->
+                </table>
+            </div>
+
+            <!-- Show More / Show Less Button -->
+            <div style="margin-bottom:25px;padding-left: 20px;">
+                <a id="toggle_button" href="javascript:void(0)" onclick="toggleNews()">Show more</a>
+            </div>
+
+            <script>
+                let newsEntries = [];
+                let visibleEntries = 3;
+                let showingAll = false;
+
+                // fetch data
+                fetch('news.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        newsEntries = data;
+                        loadNewsEntries(visibleEntries); // Initially load 3 entries
+                    });
+
+                function loadNewsEntries(limit) {
+                    const table = document.getElementById('news-table');
+                    table.innerHTML = '';
+
+                    for (let i = 0; i < newsEntries.length; i++) {
+                        const newsItem = newsEntries[i];
+                        const isHidden = (i >= limit) ? 'display: none;' : '';  // Hide entries beyond the limit
+
+                        table.innerHTML += `
+                        <tr class="news-entry" style="${isHidden}">
+                            <td style="width:15%; font-weight: bold; padding-left: 20px;">${newsItem.date}</td>
+                            <td style="width:85%;" class="news-text">${newsItem.text}</td>
+                        </tr>
+                    `;
+                    }
+
+                    // Update the button
+                    document.getElementById('toggle_button').innerHTML = showingAll ? '<u>Show less</u>' : '<u>Show more</u>';
+                }
+
+                // Toggle function to show more or fewer news entries
+                function toggleNews() {
+                    showingAll = !showingAll;
+                    if (showingAll) {
+                        // Show all entries
+                        loadNewsEntries(newsEntries.length);
+                    } else {
+                        // Show only the initial set of entries
+                        loadNewsEntries(visibleEntries);
+                    }
+                }
+            </script>
+
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                <tr>
+                    <td style="padding:20px;width:100%;vertical-align:middle">
+                        <h1 style="font-weight: bold;">Highlight</h1>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <div style="text-align:center; margin-top:0px; margin-bottom: 25px">
+                <a href="https://la.disneyresearch.com/publication/vmp-versatile-motion-priors-for-robustly-tracking-motion-on-physical-characters/"
+                   target="_blank">
+                    <video autoplay loop muted playsinline style="max-width:100%; height:auto;">
+                        <source src="data/roboGrid.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </a>
+            </div>
+
+            <hr>
+
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                <tr>
+                    <td style="padding:20px;width:100%;vertical-align:middle">
+                        <h1 style="font-weight: bold;">Research</h1>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- Research Entry Template -->
+            <table id="papers-table"></table>
+
+            <!-- Functions -->
+            <script type="text/javascript">
+                async function loadPapers() {
+                    const response = await fetch('papers/papers.json');
+                    const papers = await response.json();
+
+                    const table = document.querySelector('#papers-table');
+
+                    papers.forEach(paper => {
+                        const row = document.createElement('tr');
+
+                        row.addEventListener('mouseenter', () => startVideo(paper.id));
+                        row.addEventListener('mouseleave', () => pauseVideo(paper.id));
+
+                        // Dynamic links where last link is separated by &middot
+                        const linksHtml = paper.links.map((link, index) => {
+                            const isSecondLast = index === paper.links.length - 2;
+                            const isLast = index === paper.links.length - 1;
+
+                            if (isLast) {
+                                return `<a href="${link.url}" target="_blank">${link.name}</a>`;
+                            } else if (isSecondLast) {
+                                return `<a href="${link.url}" target="_blank">${link.name}</a> &middot; `;
+                            } else {
+                                return `<a href="${link.url}" target="_blank">${link.name}</a> | `;
+                            }
+                        }).join('');
+
+                        row.innerHTML = `
+                    <td style="padding:20px;width:30%;vertical-align:middle">
+                        <div class="one">
+                            <div class="two">
+                                <video id="${paper.id}_video" width="100%" muted loop>
+                                    <source src="${paper.videoSrc}" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                    </td>
+                    <td style="padding:20px;width:70%;vertical-align:middle">
+                        <a href="${paper.links[0]?.url || '#'}">
+                            <papertitle>${paper.title}</papertitle>
+                        </a>
+                        <br>
+                        ${paper.authors}
+                        <br>
+                        ${paper.conference}
+                        <br>
+                        ${paper.equalContribution || ''}
+                        <br>
+                        ${linksHtml.trim()}
+                        <p></p>
+                        <p>${paper.description}</p>
+                    </td>
+                `;
+
+                        table.appendChild(row);
+                    });
+                }
+
+                document.addEventListener('DOMContentLoaded', loadPapers);
+
+                function startVideo(id) {
+                    const video = document.getElementById(`${id}_video`);
+                    if (video) {
+                        video.play();
+                    }
+                }
+
+                function pauseVideo(id) {
+                    const video = document.getElementById(`${id}_video`);
+                    if (video) {
+                        video.pause();
+                    }
+                }
+            </script>
+
+            <!-- Footer Section -->
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                <tr>
+                    <td>
+                        <br>
+                        <p align="right" style="font-size: 0.75em;">
+                            Based on <a href="https://bmild.github.io" style="font-size: inherit;">Ben Mildenhall</a>
+                            and
+                            <a href="https://jonbarron.info" style="font-size: inherit;">Jon Barron</a>.<br>
+                            Last updated January 2025.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+</table>
+</body>
+</html>

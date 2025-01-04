@@ -1,0 +1,127 @@
+[
+  {
+    "id": "robotMDM",
+    "videoSrc": "papers/robotMDM/robotMDM.mp4",
+    "title": "Robot Motion Diffusion Model: Motion Generation for Robotic Characters",
+    "authors": "<strong>Agon Serifi</strong>, Ruben Grandia, Espen Knoop, Markus Gross, Moritz Bächer",
+    "conference": "<em>SIGGRAPH Asia</em> 2024",
+    "links": [
+      {
+        "name": "project page",
+        "url": "https://la.disneyresearch.com/publication/robot-motion-diffusion-model-motion-generation-for-robotic-characters/"
+      },
+      {
+        "name": "paper",
+        "url": "https://la.disneyresearch.com/wp-content/uploads/RobotMDM_red.pdf"
+      },
+      {
+        "name": "video",
+        "url": "https://www.youtube.com/watch?v=eRXS98c_Suc"
+      },
+      {
+        "name": "bibtex",
+        "url": "papers/robotMDM/robotMDM.txt"
+      },
+      {
+        "name": "ACM",
+        "url": "https://doi.org/10.1145/3680528.3687626"
+      }
+    ],
+    "description": "This paper presents a method for aligning text-conditioned kinematic motion generators with physical character capabilities by training a critic during policy training to evaluate and guide motion feasibility. The resulting Robot Motion Diffusion Model is a physics-aware generator that ensures motions align with the character’s physical constraints and controller capabilities, enabling successful deployment on robotic systems."
+  },
+  {
+    "id": "sbt",
+    "videoSrc": "papers/sbt/sbt.mp4",
+    "title": "Spline-Based Transformers",
+    "authors": "Prashanth Chandran*<strong>, Agon Serifi*</strong>, Markus Gross, Moritz Bächer",
+    "conference": "<em>ECCV</em> 2024 <strong>(Oral)</strong>",
+    "equalContribution": "<em>*Equal contribution</em>",
+    "links": [
+      {
+        "name": "project page",
+        "url": "https://la.disneyresearch.com/publication/spline-based-transformers/"
+      },
+      {
+        "name": "paper",
+        "url": "https://la.disneyresearch.com/wp-content/uploads/SBT.pdf"
+      },
+      {
+        "name": "supp",
+        "url": "https://la.disneyresearch.com/wp-content/uploads/SBT_sup.pdf"
+      },
+      {
+        "name": "video",
+        "url": "https://www.youtube.com/watch?v=AzolLlIbKhg"
+      },
+      {
+        "name": "bibtex",
+        "url": "papers/sbt/sbt.txt"
+      },
+      {
+        "name": "Springer",
+        "url": "https://link.springer.com/chapter/10.1007/978-3-031-73016-0_1"
+      }
+    ],
+    "description": "A new transformer architecture introducing spline-based latent spaces, eliminating the need for traditional positional encoding on tokens. Fully leveraging the continuity inherent in sequential data, this approach significantly outperforms traditional transformer models in both efficiency and accuracy."
+  },
+  {
+    "id": "vmp",
+    "videoSrc": "papers/vmp/vmp.mp4",
+    "title": "VMP: Versatile Motion Priors for Robustly Tracking Motion on Physical Characters",
+    "authors": "<strong>Agon Serifi</strong>, Ruben Grandia, Espen Knoop, Markus Gross, Moritz Bächer",
+    "conference": "<em>SIGGRAPH/Eurographics Symposium on Computer Animation (SCA)</em> 2024",
+    "links": [
+      {
+        "name": "project page",
+        "url": "https://la.disneyresearch.com/publication/vmp-versatile-motion-priors-for-robustly-tracking-motion-on-physical-characters/"
+      },
+      {
+        "name": "paper",
+        "url": "https://la.disneyresearch.com/wp-content/uploads/VMP_paper.pdf"
+      },
+      {
+        "name": "video",
+        "url": "https://www.youtube.com/watch?v=Q2I7u0tjlJs"
+      },
+      {
+        "name": "bibtex",
+        "url": "papers/vmp/vmp.txt"
+      },
+      {
+        "name": "ACM",
+        "url": "https://dl.acm.org/doi/10.1111/cgf.15175"
+      }
+    ],
+    "description": "The paper introduces a two-stage framework where a pre-trained latent space, derived from a variational autoencoder, encodes kinematic motion, serving as a prior for robust control policies that track motion on physics-based characters. It demonstrates effective sim-to-real transfer by leveraging domain randomization and actuator models, enabling dynamic and expressive motions on real robots, pushing the boundaries of their physical capabilities."
+  },
+  {
+    "id": "neural_augmentation",
+    "videoSrc": "papers/neural_augmentation/neural_augmentation.mp4",
+    "title": "Transformer-Based Neural Augmentation of Robot Simulation Representations",
+    "authors": "<strong>Agon Serifi</strong>, Espen Knoop, Christian Schumacher, Naveen Kumar, Markus Gross, Moritz Bächer",
+    "conference": "<em>IEEE Robotics and Automation Letters, presented at IROS</em> 2023",
+    "links": [
+      {
+        "name": "project page",
+        "url": "https://la.disneyresearch.com/publication/transformer-based-neural-augmentation-of-robot-simulation-representations/"
+      },
+      {
+        "name": "paper",
+        "url": "https://la.disneyresearch.com/wp-content/uploads/Transformer-Based-Neural-Augmentation.pdf"
+      },
+      {
+        "name": "video",
+        "url": "https://www.youtube.com/watch?v=DMAg-I6F5XA"
+      },
+      {
+        "name": "bibtex",
+        "url": "papers/neural_augmentation/neural_augmentation.txt"
+      },
+      {
+        "name": "IEEE",
+        "url": "https://ieeexplore.ieee.org/document/10113169/similar#similar"
+      }
+    ],
+    "description": "This paper introduces a modular approach for neural augmentation of simulation states, improving robot simulation accuracy by targeting individual building blocks such as actuators and rigid bodies separately. The approach generalizes across robot configurations by leveraging simulation decomposition, ensuring adaptability while minimizing sim-to-real gaps through a physics-informed loss function and transformer-based models."
+  }
+]

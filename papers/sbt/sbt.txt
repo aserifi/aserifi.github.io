@@ -1,0 +1,16 @@
+﻿@inproceedings{chandran2024sbt,
+author = {Chandran, Prashanth and Serifi, Agon and Gross, Markus and B\"{a}cher, Moritz},
+title = {Spline-Based Transformers},
+year = {2024},
+isbn = {978-3-031-73015-3},
+publisher = {Springer-Verlag},
+address = {Berlin, Heidelberg},
+url = {https://doi.org/10.1007/978-3-031-73016-0_1},
+doi = {10.1007/978-3-031-73016-0_1},
+abstract = {We introduce Spline-based Transformers, a novel class of Transformer models that eliminate the need for positional encoding. Inspired by workflows using splines in computer animation, our Spline-based Transformers embed an input sequence of elements as a smooth trajectory in latent space. Overcoming drawbacks of positional encoding such as sequence length extrapolation, Spline-based Transformers also provide a novel way for users to interact with transformer latent spaces by directly manipulating the latent control points to create new latent trajectories and sequences. We demonstrate the superior performance of our approach in comparison to conventional positional encoding on a variety of datasets, ranging from synthetic 2D to large-scale real-world datasets of images, 3D shapes, and animations.},
+booktitle = {Computer Vision – ECCV 2024: 18th European Conference, Milan, Italy, September 29–October 4, 2024, Proceedings, Part LXXXVI},
+pages = {1--17},
+numpages = {17},
+keywords = {transformer, latent splines, positional encoding},
+location = {Milan, Italy}
+}

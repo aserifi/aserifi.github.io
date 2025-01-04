@@ -1,0 +1,15 @@
+﻿@inproceedings{serifi2024vmp,
+author = {Serifi, Agon and Grandia, Ruben and Knoop, Espen and Gross, Markus and B\"{a}cher, Moritz},
+title = {VMP: Versatile Motion Priors for Robustly Tracking Motion on Physical Characters},
+year = {2024},
+publisher = {Eurographics Association},
+address = {Goslar, DEU},
+url = {https://doi.org/10.1111/cgf.15175},
+doi = {10.1111/cgf.15175},
+abstract = {Recent progress in physics-based character control has made it possible to learn policies from unstructured motion data. However, it remains challenging to train a single control policy that works with diverse and unseen motions, and can be deployed to real-world physical robots. In this paper, we propose a two-stage technique that enables the control of a character with a full-body kinematic motion reference, with a focus on imitation accuracy. In a first stage, we extract a latent space encoding by training a variational autoencoder, taking short windows of motion from unstructured data as input. We then use the embedding from the time-varying latent code to train a conditional policy in a second stage, providing a mapping from kinematic input to dynamics-aware output. By keeping the two stages separate, we benefit from self-supervised methods to get better latent codes and explicit imitation rewards to avoid mode collapse. We demonstrate the efficiency and robustness of our method in simulation, with unseen user-specified motions, and on a bipedal robot, where we bring dynamic motions to the real world.},
+booktitle = {Proceedings of the ACM SIGGRAPH/Eurographics Symposium on Computer Animation},
+pages = {1--11},
+numpages = {11},
+location = {Montreal, Quebec, Canada},
+series = {SCA '24}
+}
