@@ -1,5 +1,5 @@
 ﻿@inproceedings{chandran2024sbt,
-author = {Chandran, Prashanth and Serifi, Agon and Gross, Markus and B\"{a}cher, Moritz},
+author = {Chandran, Prashanth and Serifi, Agon and Gross, Markus and B{\"a}cher, Moritz},
 title = {Spline-Based Transformers},
 year = {2024},
 isbn = {978-3-031-73015-3},

@@ -1,5 +1,5 @@
 ﻿@ARTICLE{serifi2023transformer,
-  author={Serifi, Agon and Knoop, Espen and Schumacher, Christian and Kumar, Naveen and Gross, Markus and Bächer, Moritz},
+  author={Serifi, Agon and Knoop, Espen and Schumacher, Christian and Kumar, Naveen and Gross, Markus and B{\"a}cher, Moritz},
   journal={IEEE Robotics and Automation Letters},
   title={Transformer-Based Neural Augmentation of Robot Simulation Representations},
   year={2023},

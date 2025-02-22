@@ -1,5 +1,5 @@
 ﻿@inproceedings{serifi2024vmp,
-author = {Serifi, Agon and Grandia, Ruben and Knoop, Espen and Gross, Markus and B\"{a}cher, Moritz},
+author = {Serifi, Agon and Grandia, Ruben and Knoop, Espen and Gross, Markus and B{\"a}cher, Moritz},
 title = {VMP: Versatile Motion Priors for Robustly Tracking Motion on Physical Characters},
 year = {2024},
 publisher = {Eurographics Association},

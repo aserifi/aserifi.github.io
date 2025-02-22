@@ -1,5 +1,5 @@
 ﻿@inproceedings{serifi2024robotmdm,
-author = {Serifi, Agon and Grandia, Ruben and Knoop, Espen and Gross, Markus and B\"{a}cher, Moritz},
+author = {Serifi, Agon and Grandia, Ruben and Knoop, Espen and Gross, Markus and B{\"a}cher, Moritz},
 title = {Robot Motion Diffusion Model: Motion Generation for Robotic Characters},
 year = {2024},
 isbn = {9798400711312},
