@@ -1,5 +1,35 @@
 [
   {
+    "id": "autoOp",
+    "videoSrc": "papers/autoOp/autoOp.mp4",
+    "title": "Autonomous Human-Robot Interaction via Operator Imitation",
+    "authors": "Sammy Christen, David Müller, <strong>Agon Serifi</strong>, Ruben Grandia, Georg Wiedebach, Michael A. Hopkins, Espen Knoop, Moritz Bächer",
+    "conference": "<em>In submission</em>",
+    "links": [
+      {
+        "name": "project page",
+        "url": "https://arxiv.org/abs/2504.02724"
+      },
+      {
+        "name": "paper",
+        "url": "https://arxiv.org/pdf/2504.02724"
+      },
+      {
+        "name": "video",
+        "url": "https://youtu.be/4U4etupwzhQ?si=zu2bujq642pwC1kI"
+      },
+      {
+        "name": "bibtex",
+        "url": "papers/autoOp/autoOp.txt"
+      },
+      {
+        "name": "ArXiv",
+        "url": "https://doi.org/10.48550/arXiv.2504.02724"
+      }
+    ],
+    "description": "This paper presents a method for autonomously controlling expressive human-robot interactions by training a diffusion-based imitation model on real operator data. The resulting system predicts both continuous and discrete control inputs while conditioning on human pose, allowing the robot to produce robust, lifelike interactions and diverse moods that closely resemble expert operator performance in real-world scenarios."
+  },
+  {
     "id": "robotMDM",
     "videoSrc": "papers/robotMDM/robotMDM.mp4",
     "title": "Robot Motion Diffusion Model: Motion Generation for Robotic Characters",

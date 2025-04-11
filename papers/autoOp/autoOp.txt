@@ -1,0 +1,9 @@
+﻿@misc{christen2025autoOp,
+      title={Autonomous Human-Robot Interaction via Operator Imitation}, 
+      author={Sammy Christen and David Müller and Agon Serifi and Ruben Grandia and Georg Wiedebach and Michael A. Hopkins and Espen Knoop and Moritz B{\"a}cher},
+      year={2025},
+      eprint={2504.02724},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2504.02724}, 
+}
