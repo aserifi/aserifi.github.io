@@ -57,7 +57,7 @@
         "url": "https://doi.org/10.1145/3680528.3687626"
       }
     ],
-    "description": "This paper presents a method for aligning text-conditioned kinematic motion generators with physical character capabilities by training a critic during policy training to evaluate and guide motion feasibility. The resulting Robot Motion Diffusion Model is a physics-aware generator that ensures motions align with the character’s physical constraints and controller capabilities, enabling successful deployment on robotic systems."
+    "description": "This paper presents a method for aligning text-conditioned kinematic motion generators with the capabilities of robotic characters. Our approach combines motion generation with physics-based character control. First, we train a critic that acts as a reward surrogate by predicting the performance of the downstream non-differentiable control task. The critic provides an efficient and differentiable loss function, which is subsequently used to align the motion generator more closely with the character's physical capabilities."
   },
   {
     "id": "sbt",
@@ -92,7 +92,7 @@
         "url": "https://link.springer.com/chapter/10.1007/978-3-031-73016-0_1"
       }
     ],
-    "description": "A new transformer architecture introducing spline-based latent spaces, eliminating the need for traditional positional encoding on tokens. Fully leveraging the continuity inherent in sequential data, this approach significantly outperforms traditional transformer models in both efficiency and accuracy."
+    "description": "A new class of Transformer models that eliminate the need for positional encoding. Spline-based Transformers embed an input sequence of elements as a smooth trajectory in latent space. Fully leveraging the continuity inherent in sequential data, this approach significantly outperforms traditional transformer models in efficiency and accuracy."
   },
   {
     "id": "vmp",
@@ -122,7 +122,7 @@
         "url": "https://dl.acm.org/doi/10.1111/cgf.15175"
       }
     ],
-    "description": "The paper introduces a two-stage framework where a pre-trained latent space, derived from a variational autoencoder, encodes kinematic motion, serving as a prior for robust control policies that track motion on physics-based characters. It demonstrates effective sim-to-real transfer by leveraging domain randomization and actuator models, enabling dynamic and expressive motions on real robots, pushing the boundaries of their physical capabilities."
+    "description": "This paper introduces a two-stage framework for transferring expressive and dynamic motions onto robotic characters. Starting from a large corpus of human motion capture data, we first learn a latent space representation of short motion windows. This latent space then serves as a prior for training a tracking controller through reinforcement learning. The resulting controller pushes the boundaries of robotic characters, enabling them to move like humans and perform lifelike, dynamic motions such as dancing."
   },
   {
     "id": "neural_augmentation",
@@ -152,6 +152,6 @@
         "url": "https://ieeexplore.ieee.org/document/10113169/similar#similar"
       }
     ],
-    "description": "This paper introduces a modular approach for neural augmentation of simulation states, improving robot simulation accuracy by targeting individual building blocks such as actuators and rigid bodies separately. The approach generalizes across robot configurations by leveraging simulation decomposition, ensuring adaptability while minimizing sim-to-real gaps through a physics-informed loss function and transformer-based models."
+    "description": "This paper introduces a modular approach for neural augmentation of simulation states, improving robot simulation accuracy by targeting individual building blocks such as actuators and rigid bodies separately."
   }
 ]
